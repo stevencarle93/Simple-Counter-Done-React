@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faHeartPulse } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home(props) {
 
@@ -16,7 +16,7 @@ export default function Home(props) {
 				<div className="col">
 					<div className="d-flex justify-content-center bg-dark" style={{ height: "15rem" }}>
 						<div className="text-justify" style={{ color: "white", fontSize: "8rem" }}>
-							<FontAwesomeIcon icon={faClock} />
+							<FontAwesomeIcon icon={faHeartPulse} />
 						</div>
 						<div className = "text-justify" style={ counterStyle }> {props.digitSix} </div>
 						<div className = "text-justify" style={ counterStyle }> {props.digitFive} </div>
