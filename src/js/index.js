@@ -4,44 +4,44 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 import Home from "./component/home.jsx";
 
-let counterOne = 0
-let counterTwo = 0
-let counterThree = 0
-let counterFour = 0
-let counterFive = 0
-let counterSix = 0
+let counter_DigOne = 0
+let counter_DigTwo = 0
+let counter_DigThree = 0
+let counter_DigFour = 0
+let counter_DigFive = 0
+let counter_DigSix = 0
 
 function countValidation() {
-    if (counterOne < 9) counterOne++
-    else if (counterTwo < 9){
-        counterOne = 0
-        counterTwo++
+    if (counter_DigOne < 9) counter_DigOne++
+    else if (counter_DigTwo < 9){
+        counter_DigOne = 0
+        counter_DigTwo++
     }
-    else if (counterThree < 9){
-        counterOne = 0
-        counterTwo = 0
-        counterThree++
+    else if (counter_DigThree < 9){
+        counter_DigOne = 0
+        counter_DigTwo = 0
+        counter_DigThree++
     }
-    else if (counterFour < 9){
-        counterOne = 0
-        counterTwo = 0
-        counterThree = 0
-        counterFour++
+    else if (counter_DigFour < 9){
+        counter_DigOne = 0
+        counter_DigTwo = 0
+        counter_DigThree = 0
+        counter_DigFour++
     }
-    else if (counterFive < 9){
-        counterOne = 0
-        counterTwo = 0
-        counterThree = 0
-        counterFour = 0
-        counterFive++
+    else if (counter_DigFive < 9){
+        counter_DigOne = 0
+        counter_DigTwo = 0
+        counter_DigThree = 0
+        counter_DigFour = 0
+        counter_DigFive++
     }
-    else if (counterSix < 9){
-        counterOne = 0
-        counterTwo = 0
-        counterThree = 0
-        counterFour = 0
-        counterFive = 0
-        counterSix++
+    else if (counter_DigSix < 9){
+        counter_DigOne = 0
+        counter_DigTwo = 0
+        counter_DigThree = 0
+        counter_DigFour = 0
+        counter_DigFive = 0
+        counter_DigSix++
     }
 }
 
@@ -50,10 +50,10 @@ setInterval(() => {
     countValidation()
 
     ReactDOM.render(<Home 
-        digitOne = {counterOne}
-        digitTwo = {counterTwo}
-        digitThree = {counterThree}
-        digitFour = {counterFour}
-        digitFive = {counterFive}
-        digitSix = {counterSix}/>, document.querySelector("#app"))
+        digit_One = {counter_DigOne}
+        digit_Two = {counter_DigTwo}
+        digit_Three = {counter_DigThree}
+        digit_Four = {counter_DigFour}
+        digit_Five = {counter_DigFive}
+        digit_Six = {counter_DigSix}/>, document.querySelector("#app"))
 }, 1000);

@@ -18,12 +18,12 @@ export default function Home(props) {
 						<div className="text-justify" style={{ color: "white", fontSize: "8rem" }}>
 							<FontAwesomeIcon icon={faHeartPulse} />
 						</div>
-						<div className = "text-justify" style={ counterStyle }> {props.digitSix} </div>
-						<div className = "text-justify" style={ counterStyle }> {props.digitFive} </div>
-						<div className = "text-justify" style={ counterStyle }> {props.digitFour} </div>
-						<div className = "text-justify" style={ counterStyle }> {props.digitThree} </div>
-						<div className = "text-justify" style={ counterStyle }> {props.digitTwo} </div>
-						<div className = "text-justify" style={ counterStyle }> {props.digitOne} </div>
+						<div className = "text-justify" style={ counterStyle }> {props.digit_Six} </div>
+						<div className = "text-justify" style={ counterStyle }> {props.digit_Five} </div>
+						<div className = "text-justify" style={ counterStyle }> {props.digit_Four} </div>
+						<div className = "text-justify" style={ counterStyle }> {props.digit_Three} </div>
+						<div className = "text-justify" style={ counterStyle }> {props.digit_Two} </div>
+						<div className = "text-justify" style={ counterStyle }> {props.digit_One} </div>
 					</div>
 				</div>
 			</div>
